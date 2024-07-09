@@ -27,7 +27,7 @@ void ATankController::SetupInputComponent()
     enhancedInputComponent->BindAction(shootAction, ETriggerEvent::Triggered, this, &ATankController::HandleShoot);
 
     UEnhancedInputLocalPlayerSubsystem* subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(GetLocalPlayer());
-    checkf(enhancedInputComponent, TEXT("could not get the UEnhancedInputLocalPlayerSubsystem"));
+    checkf(subsystem, TEXT("could not get the UEnhancedInputLocalPlayerSubsystem"));
 
     subsystem->ClearAllMappings();
     subsystem->AddMappingContext(mapping, 0);
