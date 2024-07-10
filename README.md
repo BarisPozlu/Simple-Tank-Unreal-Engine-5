@@ -1,2 +1,2 @@
 # SimpleTank
- A simple tank game that implements aiming, shooting and related gameplay mechanics
+ a simple tank game that implements aiming, shooting, basic ai and related gameplay mechanics
